@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <TestConfiguration>
+    <browser>chrome</browser>
+    <instances>3</instances>
+    <machineType>n1-standard-8</machineType>
+    <gpuType>NVIDIA V100</gpuType>
+    <ssdSize>2x375 GB</ssdSize>
+    <region>europe-west4</region>
+  </TestConfiguration>
+</configuration>
