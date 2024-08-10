@@ -18,7 +18,7 @@ namespace Framework_1
         [OneTimeSetUp]
         public void Setup()
         {
-            _config = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddXmlFile("FrameworkFiles/test-settings.xml").Build();
+            _config = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddXmlFile("Sources/test-settings.xml").Build();
             driverManager = new DriverManager(_config);
             engineConfig = new ComputeEngineConfiguration(_config);
             WebDriver driver = driverManager.getDriver();

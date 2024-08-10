@@ -13,10 +13,8 @@ namespace Framework_1.FrameworkFiles
     {
         public static void takeScreenshot(WebDriver driver)
         {
-            // Take screenshot
             Screenshot screenshot = ((ITakesScreenshot)driver).GetScreenshot();
-
-            // Save screenshot to a file
+                
             string screenshotDirectory = AppDomain.CurrentDomain.BaseDirectory + "\\Screenshots\\";
             Directory.CreateDirectory(screenshotDirectory);
             string screenshotPath = Path.Combine(screenshotDirectory, $"screenshot_{DateTime.Now:yyyyMMddHHmmss}.png");
